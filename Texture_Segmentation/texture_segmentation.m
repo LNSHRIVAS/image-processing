@@ -1,4 +1,3 @@
-warning off
 figure;
 I=imread('bag.png');
 imshow(I);
