@@ -1,0 +1,12 @@
+a = imread('cameraman.tif');
+i=im2gray(a);
+h=[1 1 1; 1 -8 1; 1 1 1];
+x=[1 1 1 1 1;1 1 1 1 1;1 1 -24 1 1;1 1 1 1 1;1 1 1 1 1];
+resp=uint8(filter2(h,i));
+sharpi=imsubtract(i,resp);
+y=uint8(filter2(x,i));
+z=imsubtract(i,y);
+subplot(2,1,1);
+imshow(a);
+subplot(2,1,2);
+imshow((z));
