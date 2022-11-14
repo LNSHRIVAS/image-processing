@@ -1,3 +1,4 @@
+%Dilation + erosion
 clc;
 clear all;
 close all;
